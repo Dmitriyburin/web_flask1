@@ -13,9 +13,12 @@ def form_sample():
         print(request.form['email'])
         print(request.form['password'])
         print(request.form['file'])
+        print(request.form['prof'])
+        print(request.form['education'])
         print(request.form['about'])
         print(request.form['accept'])
         print(request.form['sex'])
+
         return "Форма отправлена"
 
 
