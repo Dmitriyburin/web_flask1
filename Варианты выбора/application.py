@@ -17,8 +17,10 @@ planets_dict = {
 @app.route('/choice/<planet_name>', methods=['POST', 'GET'])
 def form_sample(planet_name):
     url_style = url_for('static', filename='css/style.css')
-    sent_for_planet = planets_dict[planet_name]
+    if planet_name not in planets_dict:
+        return '<h1>Такой планеты у нас еще нет(</h1>'
 
+    sent_for_planet = planets_dict[planet_name]
     if request.method == 'GET':
         return render_template('index.html', url_style=url_style, sent_for_planet=sent_for_planet, planet=planet_name)
     elif request.method == 'POST':
