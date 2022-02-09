@@ -14,7 +14,7 @@ planets_dict = {
 }
 
 
-@app.route('/choice/<planet_name>', methods=['POST', 'GET'])
+@app.route('/choice/<planet_name>', methods=['GET'])
 def form_sample(planet_name):
     url_style = url_for('static', filename='css/style.css')
     if planet_name not in planets_dict:
@@ -23,17 +23,6 @@ def form_sample(planet_name):
     sent_for_planet = planets_dict[planet_name]
     if request.method == 'GET':
         return render_template('index.html', url_style=url_style, sent_for_planet=sent_for_planet, planet=planet_name)
-    elif request.method == 'POST':
-        print(request.form['email'])
-        print(request.form['password'])
-        print(request.form['file'])
-        print(request.form['prof'])
-        print(request.form['education'])
-        print(request.form['about'])
-        print(request.form['accept'])
-        print(request.form['sex'])
-
-        return "Форма отправлена"
 
 
 if __name__ == '__main__':
