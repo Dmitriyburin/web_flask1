@@ -1,0 +1,32 @@
+h1, h3 {
+    margin: 0px;
+    text-align: center;
+}
+
+form.login_form {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 450px;
+    background-color: #ffcc00;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+    align-items: center;
+}
+
+
+
+.al {
+    margin-left: 350px;
+    margin-top: 20px;
+    min-width: 450px;
+}
+
+
+.div_for_btn {
+    margin-top: 10px;
+}
+
+.main_img {
+    margin-top: 30px;
+}
