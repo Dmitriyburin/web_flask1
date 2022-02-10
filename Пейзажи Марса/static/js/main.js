@@ -1,6 +1,6 @@
 let count = 0;
 setInterval(()=>{
-    count = (count + 1) % 3;
+    count = (count + 1) % 4;
     let elements = document.querySelectorAll('.carousel-item');
     for (let [i, elem] of elements.entries()) {
         elem.classList.remove('active');
