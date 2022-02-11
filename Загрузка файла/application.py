@@ -1,5 +1,6 @@
 from flask import Flask
 from flask import url_for, request, render_template
+import os
 
 app = Flask(__name__)
 img = False
@@ -15,6 +16,12 @@ def form_sample():
     elif request.method == 'POST':
         f = request.files['file']
         if f.filename:
+            try:
+                if img:
+                    print(img)
+                    os.remove(img[1:])
+            except FileNotFoundError:
+                pass
             f.save(f'static/img/{f.filename}')
             img = url_for('static', filename=f'img/{f.filename}')
         return render_template('index.html', url_style=url_style, img=img)
