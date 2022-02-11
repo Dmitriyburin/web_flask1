@@ -2,17 +2,22 @@
 
 {% block content %}
     <h2 class="h2-main">Список профессий</h2>
+
     {% if list == 'ol' %}
         <ol>
             {% for prof in list_prof %}
                 <li>{{ prof }}</li>
             {% endfor %}
         </ol>
-    {% else %}
+    {% elif list == 'ul' %}
         <ul>
             {% for prof in list_prof %}
                 <li>{{ prof }}</li>
             {% endfor %}
         </ul>
+    {% else %}
+        <div class="alert alert-danger" role="alert">
+            Неверный параметр!
+        </div>
     {% endif %}
 {% endblock %}
