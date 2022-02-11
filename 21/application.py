@@ -4,10 +4,10 @@ from flask import url_for, render_template
 app = Flask(__name__)
 
 
-@app.route('/', methods=['POST', 'GET'])
-def form_sample():
+@app.route('/<title>', methods=['POST', 'GET'])
+def form_sample(title):
     url_style = url_for('static', filename='css/style.css')
-    return render_template('base.html', url_style=url_style, title='Привет, мир!')
+    return render_template('base.html', url_style=url_style, title=title)
 
 
 if __name__ == '__main__':
