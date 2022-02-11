@@ -20,6 +20,5 @@ def form_sample():
         return render_template('index.html', url_style=url_style, img=img)
 
 
-
 if __name__ == '__main__':
     app.run(port=8080, host='127.0.0.1', debug=True)
