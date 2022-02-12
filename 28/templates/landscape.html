@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h3 class="h3-main">
+        Пейзажи Марса
+    </h3>
+    <div id="carouselka" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
+        <div class="carousel-inner">
+            {% for image in url_images %}
+                <div class="carousel-item img-main {% if loop.first %}active{% endif %}">
+                    <img src="{{ image }}" class="d-block w-100" alt="{{ image }}">
+                </div>
+            {% endfor %}
+        </div>
+        <div class="alert alert-secondary al" role="alert">
+            <form method="post" enctype="multipart/form-data" class="form">
+                <div class="form-group">
+                <label for="photo">Выберите файл</label>
+                <input type="file" class="form-control-file" id="photo" name="file" />
+                </div>
+                {% if img %}
+                <img class='main_img' src="{{ img }}" alt="Не открывается">
+                {% endif %}
+                <div class="div_for_btn">
+                  <button type="submit" class="btn btn-primary ">Отправить</button>
+                </div>
+    
+            </form>
+        </div>
+        
+    </div>
+          
+    
+{% endblock %}
