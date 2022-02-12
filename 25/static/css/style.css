@@ -1,0 +1,28 @@
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.h2-main{
+    text-align: center;
+}
+
+.h3-main {
+    margin-left: 20px;
+}
+
+.h4-main {
+    color: #d0559a;
+}
+
+
+.al, .btn-main {
+    margin-top: 5px;
+}
+
+.acces {
+    display: flex;
+    align-self: flex-end;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
