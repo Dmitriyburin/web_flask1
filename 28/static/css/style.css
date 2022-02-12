@@ -47,23 +47,3 @@ h1, h2, h3, h4, p {
     height: 30px;
     background-color: #C4C7B9;
 }
-
-.ino-div, .ino-img {
-    width: 400px;
-    height: 600px;
-}
-
-.female-adult {
-    background-color: #FF5600;
-}
-.female-young {
-    background-color: #F59D6F;
-}
-.male-adult {
-    background-color: #0076FF;
-
-}
-.male-young {
-    background-color: #68AEFF;
-
-}
