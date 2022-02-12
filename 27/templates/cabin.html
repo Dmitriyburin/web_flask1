@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h3 class="h3-main">
+        Оформление каюты
+    </h3>
+    <div class="em-div">
+        <div class="em-param">
+            <label class="em-color">Цвет эмблемы</label>
+            <label class="em">Эмблема</label>
+        </div>
+        <div class="flex"> 
+            {% if sex == 'male' %}
+                {% if age >= 21 %}
+                    <div class="ino-div male-adult"></div>
+                    <img class= 'ino-img' src="{{ adult }}" alt="">
+                {% else %}
+                    <div class="ino-div male-young"></div>
+                    <img class= 'ino-img' src="{{ young }}" alt="">
+                {% endif %}
+            {% elif sex == 'female' %}
+                {% if age >= 21 %}
+                    <div class="ino-div female-adult"></div>
+                    <img class= 'ino-img' src="{{ adult }}" alt="">
+                {% else %}
+                    <div class="ino-div female-young"></div>
+                    <img class= 'ino-img' src="{{ young }}" alt="">
+                {% endif %}
+    
+            {% endif %}
+        </div>
+    </div>
+    
+{% endblock %}
