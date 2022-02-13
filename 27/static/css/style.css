@@ -3,6 +3,15 @@ h1, h2, h3, h4, p {
     padding: 0;
 }
 
+table {
+    border-collapse: collapse;
+  }
+  
+  td {
+    padding: 0px
+  }
+
+
 .h2-main{
     text-align: center;
 }
