@@ -1,0 +1,47 @@
+{
+    "staff": [
+
+        {
+            "name": "Энди",
+            "surname": "Уир",
+            "url_img": "static/img/young.png",
+            "profs": ["инженер-исследователь", "пилот", "строитель"]
+        },
+        
+        {
+            "name": "Ридли",
+            "surname": "Скот",
+            "url_img": "static/img/adult.png",
+            "profs": ["экзобиолог", "врач"]
+        },
+        
+        {
+            "name": "Марк",
+            "surname": "Уотни",
+            "url_img": "static/img/ino3.png",
+            "profs": ["инженер по терраформированию"]
+        },
+
+        {
+            "name": "Венката",
+            "surname": "Капур",
+            "url_img": "static/img/ino4.png",
+            "profs": ["климатолог", "специалист по радиационной защите"]
+        },
+
+        {
+            "name": "Тедди",
+            "surname": "Сандерс",
+            "url_img": "static/img/ino5.png",
+            "profs": ["астрогеолог", "гляциолог"]
+        },
+
+        {
+            "name": "Шон",
+            "surname": "Бин",
+            "url_img": "static/img/ino6.png",
+            "profs": ["оператор марсохода", "киберинженер", "штурман"]
+        } 
+        
+    ]
+}
