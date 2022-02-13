@@ -4,7 +4,35 @@
     <h3 class="h3-main">
         Оформление каюты
     </h3>
-    <div class="em-div">
+    <table class="main-table">
+        <tbody>
+            <tr>
+                <td class="main-th">Цвет эмблемы</td>
+                <td class="main-th">Эмблема</td>    
+            </tr>
+            <tr>
+                {% if sex == 'male' %}
+                    {% if age >= 21 %}
+                        <td><div class="ino-div male-adult"></div></td>
+                        <td><img class= 'ino-img' src="{{ adult }}" alt=""></td>
+                    {% else %}
+                        <td><div class="ino-div male-young"></div></td>
+                        <td><img class= 'ino-img' src="{{ young }}" alt=""></td>
+                    {% endif %}
+                {% elif sex == 'female' %}
+                    {% if age >= 21 %}
+                        <td><div class="ino-div female-adult"></div></td>
+                        <td><img class= 'ino-img' src="{{ adult }}" alt=""></td>
+                    {% else %}
+                        <td><div class="ino-div female-young"></div></td>
+                        <td><img class= 'ino-img' src="{{ young }}" alt=""></td>
+                    {% endif %}
+    
+                {% endif %}
+            </tr>
+        </tbody>
+    </table>
+    <!-- <div class="em-div">
         <div class="em-param">
             <label class="em-color">Цвет эмблемы</label>
             <label class="em">Эмблема</label>
@@ -29,6 +57,6 @@
     
             {% endif %}
         </div>
-    </div>
+    </div> -->
     
 {% endblock %}
