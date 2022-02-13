@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% set item = staff['staff'] | random %}
+    <div class="main-container">
+        <h2 class="h2-main">{{item["name"]}} {{item['surname']}}</h2>
+        <p class="div-img">
+            <img class='img-main' src="{{item['url_img']}}" alt="">
+        </p>
+        <p class="p-main">{{item['profs'] | join(', ')}}</p>
+    </div>
+{% endblock %}
