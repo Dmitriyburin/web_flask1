@@ -3,13 +3,22 @@ h1, h2, h3, h4, p {
     padding: 0;
 }
 
-.h2-main {
+table {
+    border-collapse: collapse;
+  }
+  
+  td {
+    padding: 0px
+  }
+
+
+.h2-main{
+    text-align: center;
+}
+
+.h3-main {
     margin-left: 20px;
     margin-top: 40px;
-    text-align: center;
-} 
-
-.h3-main{
     text-align: center;
 }
 
@@ -58,4 +67,16 @@ h1, h2, h3, h4, p {
 .male-young {
     background-color: #68AEFF;
 
+}
+
+.main-table {
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.main-th {
+    width: 400px;
+    font-size: 400;
+    text-align: center;
+    background-color: #B4B7AE;
 }
