@@ -3,13 +3,13 @@ h1, h2, h3, h4, p {
     padding: 0;
 }
 
-.h2-main{
-    text-align: center;
-}
-
-.h3-main {
+.h2-main {
     margin-left: 20px;
     margin-top: 40px;
+    text-align: center;
+} 
+
+.h3-main{
     text-align: center;
 }
 
